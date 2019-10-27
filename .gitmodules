@@ -1,3 +1,0 @@
-[submodule "blog/themes/hugo-changelog-theme"]
-	path = blog/themes/hugo-changelog-theme
-	url = git@github.com:jsnjack/hugo-changelog-theme.git
