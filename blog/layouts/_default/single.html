@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $baseurl := .Site.BaseURL }}
+<span class="b">/ </span>
+<a href="{{ .Site.BaseURL  }}" class="">{{ .Site.Title }}</a>
+
+<section id="main" class="mt5">
+  <h1 itemprop="name" id="title">{{ .Title }}</h1>
+
+  <article itemprop="articleBody" id="content" class="">
+    {{ .Content }}
+  </article>
+</section>
+{{end}}

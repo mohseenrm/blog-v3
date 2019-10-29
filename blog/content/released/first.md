@@ -10,7 +10,4 @@ New release
 some more content
 
 new para
-
-- {{% tag fixed %}} Keep end tags
-- {{% tag added %}} Fix permissions when creating new folders
-- {{% tag fixed %}} Fix handling of taxonomy terms containing slashes
+containing slashes
