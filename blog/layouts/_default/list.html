@@ -5,11 +5,21 @@
   <div>
     <ul id="list" class="timeline">
       {{ range .Data.Pages.ByDate.Reverse }}
-      <li class="event" data-date="2005">
-        <!-- <a class="f3 b dib black no-underline" href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="f6 gray db dib-ns">{{ .Date.Format "January 2, 2006" }}</span> -->
-        <h3>Dinosaurs Roamed the Earth</h3>
-        <p>RAWWWWWWRRR 🐢🦂</p>
+      <li class="timeline-item">
+        <div class="timeline-left">
+          <a
+            class="timeline-icon tooltip" 
+            href="{{ .Permalink }}"
+            data-tooltip="{{ .Date.Format `January 2, 2006` }}"
+          >
+            {{ .Title }}
+          </a>
+        </div>
+        
+        <div class="timeline-content">
+          {{ .Title }}
+          {{ .Date.Format "January 2, 2006" }}
+        </div>
       </li>
       {{ end }}
     </ul>
