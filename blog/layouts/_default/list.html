@@ -1,13 +1,15 @@
 {{ define "main" }}
 <span class="b">/ </span>
 <a href="{{ .Site.BaseURL  }}" class="">{{ .Site.Title  }}</a>
-<section id="main" class="mt5">
+<section id="timeline-content" class="mt5">
   <div>
-    <ul id="list" class="pl0">
+    <ul id="list" class="timeline">
       {{ range .Data.Pages.ByDate.Reverse }}
-      <li class="list pl0 lh-copy">
-        <a class="f3 b dib black no-underline" href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="f6 gray db dib-ns">{{ .Date.Format "January 2, 2006" }}</span>
+      <li class="event" data-date="2005">
+        <!-- <a class="f3 b dib black no-underline" href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="f6 gray db dib-ns">{{ .Date.Format "January 2, 2006" }}</span> -->
+        <h3>Dinosaurs Roamed the Earth</h3>
+        <p>RAWWWWWWRRR 🐢🦂</p>
       </li>
       {{ end }}
     </ul>
