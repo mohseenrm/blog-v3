@@ -3,9 +3,9 @@
 <a href="{{ .Site.BaseURL  }}" class="">{{ .Site.Title  }}</a>
 <section id="timeline-content" class="mt5">
   <div>
-    <ul id="list" class="timeline">
+    <ul id="list" class="container">
       {{ range .Data.Pages.ByDate.Reverse }}
-      <li class="timeline-item">
+      <li class="timeline-item" date-is='20-07-1990'>
         <div class="timeline-left">
           <a
             class="timeline-icon tooltip" 
