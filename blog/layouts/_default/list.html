@@ -1,21 +1,21 @@
 {{ define "main" }}
-<span class="b">/ </span>
-<a href="{{ .Site.BaseURL  }}" class="">{{ .Site.Title  }}</a>
+
+<nav class="nav-bar">
+  <span class="b">/ </span>
+  <a href="{{ .Site.BaseURL  }}" class="">{{ .Site.Title  }}</a>
+</nav>
+
 <section id="timeline-content" class="mt5">
   <div>
     <ul id="list" class="container">
-      {{ range .Data.Pages.ByDate.Reverse }}
-      <li class="timeline-item" date-is='20-07-1990'>
+      {{ range .Pages.ByDate.Reverse }}
+      <li class="timeline-item" date-is="{{ .Date.Format `January 2, 2006` }}">
         <div class="timeline-left">
-          <a
-            class="timeline-icon tooltip" 
-            href="{{ .Permalink }}"
-            data-tooltip="{{ .Date.Format `January 2, 2006` }}"
-          >
+          <a href="{{ .Permalink }}">
             {{ .Title }}
           </a>
         </div>
-        
+
         <div class="timeline-content">
           {{ .Title }}
           {{ .Date.Format "January 2, 2006" }}

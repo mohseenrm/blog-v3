@@ -128,6 +128,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+#timeline-content {
+  display: flex;
+  padding: 2% 10%; }
+
+.nav-bar {
+  display: flex;
+  padding: 1% 10%; }
+
 html, body {
   height: 100%;
   width: 100%; }
