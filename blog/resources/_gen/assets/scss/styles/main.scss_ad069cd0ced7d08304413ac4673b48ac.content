@@ -128,6 +128,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html, body {
+  width: 100%; }
+
 #timeline-content {
   display: flex;
   background: white;
@@ -137,8 +140,10 @@ table {
 
 .nav-bar {
   display: flex;
-  padding: 2%;
-  font-size: 2rem; }
+  justify-content: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 #content {
   display: flex;
@@ -151,10 +156,6 @@ table {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0% 3% 3% 3%;
   height: 100%; }
-
-html, body {
-  height: 100%;
-  width: 100%; }
 
 body {
   font-size: 14px;
@@ -180,7 +181,7 @@ p {
   padding: 3em 2em 2em;
   position: relative;
   color: rgba(0, 0, 0, 0.7);
-  border-left: 2px solid rgba(0, 0, 0, 0.3); }
+  border-left: 2px solid rgba(255, 218, 11, 0.787); }
   .timeline-item p {
     font-size: 1rem; }
   .timeline-item::before {
@@ -194,17 +195,62 @@ p {
     font-weight: 700;
     font-size: .785rem; }
   .timeline-item::after {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     display: block;
     top: 1em;
     position: absolute;
-    left: -7px;
-    border-radius: 10px;
+    left: -11px;
+    border-radius: 15px;
     content: '';
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 218, 11, 0.787);
     background: white; }
   .timeline-item:last-child {
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%; }
+    border-image: linear-gradient(to bottom, rgba(255, 218, 11, 0.787) 60%, rgba(255, 218, 11, 0)) 1 100%; }
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%; }
+
+svg text#mm {
+  stroke-dasharray: 800;
+  animation: fill_logo 3s cubic-bezier(0.11, 0.5, 0.83, 0.67);
+  opacity: 1; }
+
+svg rect#border {
+  stroke-dasharray: 800;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 15;
+  animation: fill_border 3s cubic-bezier(0.11, 0.5, 0.83, 0.67);
+  opacity: 1; }
+
+@keyframes fill_logo {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 800; }
+  30% {
+    opacity: 1; }
+  90% {
+    fill: rgba(0, 0, 0, 0); }
+  100% {
+    fill: black;
+    stroke-dashoffset: 0; } }
+
+@keyframes fill_border {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 800;
+    stroke-width: 1; }
+  30% {
+    opacity: 1;
+    stroke-width: 1; }
+  85% {
+    stroke-width: 2; }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 2; } }
 
 /*# sourceMappingURL=main.css.map */
