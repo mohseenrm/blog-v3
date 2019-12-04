@@ -1,9 +1,33 @@
 #timeline-content {
   display: flex;
-  padding: 2% 10%;
+  // padding: 2% 10%;
+  background: white;
+  padding: 0% 5%;
+  height: 100%;
+
+  border-radius: 5px;
 }
 
 .nav-bar {
   display: flex;
-  padding: 1% 10%;
+  // padding: 1% 10%;
+  padding: 2%;
+  font-size: 2rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+
+  // background: #360033; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #160015, #0b8793); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #160015, #0b8793); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  padding: 0% 3% 3% 3%;
+  height: 100%;
 }
