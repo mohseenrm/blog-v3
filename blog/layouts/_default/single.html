@@ -1,3 +1,15 @@
+{{ define "header" }}
+{{ if .Site.IsServer }}
+{{ $cssOpts := (dict "targetPath" "styles/post.css" "enableSourceMap" true ) }}
+{{ $styles := resources.Get "styles/post.scss" | toCSS $cssOpts }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+{{ else }}
+{{ $cssOpts := (dict "targetPath" "styles/post.css" ) }}
+{{ $styles := resources.Get "styles/post.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+{{ end }}
+{{end}}
+
 {{ define "main" }}
 {{ $baseurl := .Site.BaseURL }}
 <span class="b">/ </span>
