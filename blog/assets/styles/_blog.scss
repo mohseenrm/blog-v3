@@ -1,7 +1,4 @@
 // ----------------  THE BASICS
-
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
-
 body {
 	font-size: 14px;
 	line-height: 1.5;
@@ -10,17 +7,18 @@ body {
 // ----------------  THE FONTS
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Playfair Display', serif;
 }
 
 h1 {
-	font-size: 2rem;
-	margin-bottom: .5em;
+	font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
-p {
-	font-family: 'Roboto', sans-serif;
-	font-size: .8rem;
+div, p, span {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
 }
 
 // ----------------  LAYOUT
@@ -46,15 +44,15 @@ $border-color: rgba(255, 218, 11, 0.787);
 	}
 	
 	&::before {
-		content: attr(date-is);
-		position: absolute;
-		left: 2em;
-		font-weight: bold;
-		top: 1em;
-		display: block;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		font-size: .785rem;
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1.1em;
+    display: block;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: 1px;
 	}
 
 	&::after {
@@ -82,7 +80,32 @@ $border-color: rgba(255, 218, 11, 0.787);
 .logo {
   display: flex;
   justify-content: flex-end;
-  padding: 2%;
+  // padding: 2%;
+
+  /* right margin depends on padding of div#content container */
+  position: fixed;
+  top: 0;
+  right: 3%;
+}
+
+.link {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  background-image: -webkit-linear-gradient(to right, #ff9966, #ff5e62);
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 80%;
+  transition: background-size 0.25s ease-in, color 0.25s ease-in, font-weight 0.25s ease-in;
+  &:hover {
+    color: white;
+    background-size: 100% 88%;
+    font-weight: 100;
+  }
 }
 
 svg text#mm {

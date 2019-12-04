@@ -9,6 +9,8 @@
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
   {{- end }}
 
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+
   {{ if .Site.IsServer }}
   {{ $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) }}
   {{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts }}

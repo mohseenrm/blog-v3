@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
 html,
 body,
 div,
@@ -140,10 +139,8 @@ html, body {
 
 .nav-bar {
   display: flex;
-  justify-content: flex-end;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0; }
+  justify-content: center;
+  align-items: center; }
 
 #content {
   display: flex;
@@ -154,6 +151,7 @@ html, body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #ffa751, #ffe259);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* also update the right margin of logo to make it look even */
   padding: 0% 3% 3% 3%;
   height: 100%; }
 
@@ -162,15 +160,16 @@ body {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Playfair Display', serif; }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: .5em; }
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic; }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: .8rem; }
+div, p, span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem; }
 
 .container {
   max-width: 1024px;
@@ -189,11 +188,11 @@ p {
     position: absolute;
     left: 2em;
     font-weight: bold;
-    top: 1em;
+    top: 1.1em;
     display: block;
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: .785rem; }
+    font-size: .9rem;
+    letter-spacing: 1px; }
   .timeline-item::after {
     width: 15px;
     height: 15px;
@@ -211,7 +210,27 @@ p {
 .logo {
   display: flex;
   justify-content: flex-end;
-  padding: 2%; }
+  /* right margin depends on padding of div#content container */
+  position: fixed;
+  top: 0;
+  right: 3%; }
+
+.link {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(to right, #ff9966, #ff5e62);
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 80%;
+  transition: background-size 0.25s ease-in, color 0.25s ease-in, font-weight 0.25s ease-in; }
+  .link:hover {
+    color: white;
+    background-size: 100% 88%;
+    font-weight: 100; }
 
 svg text#mm {
   stroke-dasharray: 800;
