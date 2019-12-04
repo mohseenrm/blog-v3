@@ -142,7 +142,7 @@ html, body {
   justify-content: center;
   align-items: center; }
 
-#content {
+.content {
   display: flex;
   flex-direction: column;
   background: #ffe259;
@@ -207,14 +207,6 @@ div, p, span {
   .timeline-item:last-child {
     border-image: linear-gradient(to bottom, rgba(255, 218, 11, 0.787) 60%, rgba(255, 218, 11, 0)) 1 100%; }
 
-.logo {
-  display: flex;
-  justify-content: flex-end;
-  /* right margin depends on padding of div#content container */
-  position: fixed;
-  top: 0;
-  right: 3%; }
-
 .link {
   color: black;
   font-size: 2rem;
@@ -231,6 +223,14 @@ div, p, span {
     color: white;
     background-size: 100% 88%;
     font-weight: 100; }
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  /* right margin depends on padding of div#content container */
+  position: fixed;
+  top: 0;
+  right: 3%; }
 
 svg text#mm {
   stroke-dasharray: 800;

@@ -1,0 +1,22 @@
+// ----------------  THE BASICS
+body {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+// ----------------  THE FONTS
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+div, p, span {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+}
