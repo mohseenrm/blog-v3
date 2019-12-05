@@ -1,7 +1,13 @@
 {{ define "header" }}
+{{ if .Site.IsServer }}
 {{ $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) }}
-{{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts | minify | fingerprint }}
+{{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+{{ else }}
+{{ $cssOpts := (dict "targetPath" "styles/main.css" "outputStyle" "compressed") }}
+{{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+{{ end }}
 {{end}}
 
 {{ define "main" }}
