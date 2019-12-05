@@ -86,3 +86,20 @@ svg rect#border {
     stroke-width: 2;
   }
 }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) { 
+  .logo{
+    & > svg {
+      width: 15%;
+    }
+
+    margin: 2%;
+  }
+
+  .link {
+    font-size: 1.3rem;
+  }
+}

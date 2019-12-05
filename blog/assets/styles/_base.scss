@@ -36,3 +36,28 @@ div, p, span {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1rem;
 }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) { 
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.3rem;
+  }
+  
+  h5, h6 {
+    font-size: 1rem;
+  }
+}

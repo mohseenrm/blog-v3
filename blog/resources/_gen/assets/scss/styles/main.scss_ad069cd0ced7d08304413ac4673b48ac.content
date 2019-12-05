@@ -183,10 +183,18 @@ div, p, span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem; }
 
-.container {
-  max-width: 1024px;
-  width: 90%;
-  margin: 0 auto; }
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.8rem; }
+  h3 {
+    font-size: 1.5rem; }
+  h4 {
+    font-size: 1.3rem; }
+  h5, h6 {
+    font-size: 1rem; } }
 
 .timeline-item {
   padding: 3em 2em 2em;
@@ -283,5 +291,14 @@ svg rect#border {
   100% {
     stroke-dashoffset: 0;
     stroke-width: 2; } }
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .logo {
+    margin: 2%; }
+    .logo > svg {
+      width: 15%; }
+  .link {
+    font-size: 1.3rem; } }
 
 /*# sourceMappingURL=main.css.map */
