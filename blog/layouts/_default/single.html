@@ -1,4 +1,5 @@
 {{ define "header" }}
+{{/*  CSS  */}}
 {{ if .Site.IsServer }}
 {{ $cssOpts := (dict "targetPath" "styles/post.css" "enableSourceMap" true ) }}
 {{ $styles := resources.Get "styles/post.scss" | toCSS $cssOpts }}
@@ -8,16 +9,21 @@
 {{ $styles := resources.Get "styles/post.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 {{ end }}
+{{/*  JS  */}}
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 {{end}}
 
 {{ define "main" }}
 {{ $baseurl := .Site.BaseURL }}
 <nav class="nav-bar">
-  <h1>{{ .Title }}</h1>
+  <h1 class="banner_title">{{ .Title }}</h1>
 
   <a href="{{ .Site.BaseURL  }}" class="logo">
     {{/*  SVG  */}}
-    <svg width="30%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 250 200">
+    <svg id="logo" width="30%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 250 200">
       <defs>
         <text id="2" x="212.99" y="382.99" font-size="79" font-family="Cuprum" font-weight="700" font-style="normal" transform="matrix(1,0,0,1,48.764940239043824,-141.23107569721117) " xml:space="preserve">
           <tspan x="212.99" dy="0em" text-anchor="start" id="svg_1">MM</tspan>
@@ -55,8 +61,13 @@
   />
   <h1 itemprop="name" id="title">{{ .Title }}</h1>
 
-  <article itemprop="articleBody" class="content" class="">
+  <article itemprop="articleBody">
     {{ .Content }}
   </article>
 </section>
+{{end}}
+
+{{ define "footer" }}
+<script src="/prognroll.js"></script>
+<script src="/post.js"></script>
 {{end}}
