@@ -37,6 +37,10 @@ div, p, span {
 	font-size: 1rem;
 }
 
+article {
+  text-align: justify;
+}
+
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 

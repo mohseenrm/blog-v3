@@ -183,6 +183,9 @@ div, p, span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem; }
 
+article {
+  text-align: justify; }
+
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   h1 {
@@ -296,8 +299,9 @@ svg rect#border {
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .logo {
     margin: 2%; }
-    .logo > svg {
-      width: 15%; }
+    .logo > svg#logo {
+      width: 10%;
+      margin-top: 2.8%; }
   .link {
     font-size: 1.3rem; } }
 

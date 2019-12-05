@@ -19,8 +19,6 @@
 {{ define "main" }}
 {{ $baseurl := .Site.BaseURL }}
 <nav class="nav-bar">
-  <h1 class="banner_title">{{ .Title }}</h1>
-
   <a href="{{ .Site.BaseURL  }}" class="logo">
     {{/*  SVG  */}}
     <svg id="logo" width="30%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 250 200">
@@ -53,7 +51,7 @@
   </a>
 </nav>
 
-<section id="main" class="mt5">
+<section id="main" class="content">
   <img
     class="banner_image"
     alt="{{ .Params.banner_img_alt }}"
@@ -61,7 +59,7 @@
   />
   <h1 itemprop="name" id="title">{{ .Title }}</h1>
 
-  <article itemprop="articleBody">
+  <article class="article" itemprop="articleBody">
     {{ .Content }}
   </article>
 </section>

@@ -13,10 +13,27 @@
 }
 
 .logo {
-  top: 0;
-  margin: 0.5% 2.2% 0% 0%;
+  position: relative;
+  right: 0;
   padding: 0;
-  width: 30%;
+
+  width: 100%;
+  justify-content: center;
+
+  & > svg#logo {
+    width: 10%;
+  }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) { 
+  .logo{
+    & > svg#logo {
+      margin-top: 0%;
+    }
+  }
 }
 
 svg#logo {
