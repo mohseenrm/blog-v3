@@ -166,9 +166,15 @@ h4 {
 h5, h6 {
   font-size: 1rem; }
 
-div, p, span {
+div, p, span, ul, ol {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem; }
+
+ul, ol {
+  list-style: initial; }
+
+strong {
+  font-weight: 600; }
 
 article {
   text-align: justify; }
@@ -442,6 +448,15 @@ a:active {
 
 .article {
   padding: 0% 2%; }
+
+/* https://css-tricks.com/full-width-containers-limited-width-parents/ */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; }
 
 .nav-bar {
   position: sticky;

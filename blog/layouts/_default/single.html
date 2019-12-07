@@ -60,7 +60,13 @@
 </div>
 
 <section id="main" class="content">
-  <h1 itemprop="name" id="title">{{ .Title }}</h1>
+  <h1 itemprop="name" id="title">
+    {{ if .Params.how_not_to }}
+    How not to {{ lower .Title }}
+    {{ else }}
+    {{ .Title }}
+    {{end}}
+  </h1>
 
   <article class="article" itemprop="articleBody">
     {{ .Content }}
