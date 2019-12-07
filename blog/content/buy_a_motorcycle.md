@@ -8,6 +8,45 @@ banner_img_alt: "Motorcycle"
 how_not_to: true
 ---
 
+So you've made it, had enough with being normal and decided it wasn't for you. Maybe you've had a hard time and made poor choices in life, that got you to a divorce or made you vegan or both. Whatever it may be, welcome! and prepare to roam the earth as Mad Max slaying commute zombies and getting to work/school/dentist like a badass you are.
+
+Before you swing your foot over the two wheeled crotch rocket there are a few things you should look out for that will make your badassery effortless.
+
+![alt text](https://media1.fdncms.com/riverfronttimes/imager/u/original/2569020/idiotarod_14.jpg "Shopping lists")
+
+Whether it's the end of the world or you need to convince yourself this is a great idea, you need lists. Here's a list of stuff you'll need to read up about:
+
+* Type of motorcycle
+* **Insurance** (a.k.a backup)
+* Motorcycle safety course
+* Gear & After market parts
+* License*
+
+(*fun tip: While you might need a license to ride a motorcycle, you do not need one to buy it. But get it though)
+
+### Type of motorcycle
+
+There are plenty of types of motorcycles out there and you need to pick the best one for you. Each type has it's strengths and weakness and you cannot (should not) take you shining new white sportsbike offroad in a damp terrain.
+
+I'll leave the in depth analysis of each type of motorcycle to desk folk (*cough* qualified people *cough*).
+
+#### Sport
+
+Most nimble and agile of all the bikes, they can tear canyon roads with ease (*driven by an skilled rider) or shave 0.85 secs on the best lap time (*also not you). That being said they are really fun to ride with a bit of an aggressive riding style and glee happy leaning over either side. Even within this category there are different types based on capacity of the engine (cc) and it's types (V2s, Inline 4s..).
+
+> My advice, make a wise choice and try to stick with it
+
+#### Cruisers
+
+Bigger, broader and cooler looking of it brethren. This is perfect for going out on your quests for searching life's meaning or not dealing with your mid life crisis. Just kidding, if you're serious about hauling groceries, cruisers are for you. With saddles and comfier seats, these are great for short and long distance rides.
+Harleys and Indians (not the people) make great looking bikes that are low and comfortable to ride on. Some of them (mostly touring versions) also come with extravagances like heated grips we mere mortals can only dream of.
+
+#### Naked
+
+The unholy bastard love child of sport and cruiser bikes. They usually have a tuned sports engine with stripped down fairings to reduce excess weight with a more upright seating position. These bikes are drop dead gorgeous with ample power for urban chariotting (*not an actual word, but should be).
+
+---------
+
 Riding is exciting and even better is a mean machine to tear down those twisties. But before you swing a foot on motorcycle here's some boring stuff you have to get together before riding into the wind.
 
 This post is not to discourage you from buying a motorcycle. I highly advocate more people use it. Talk about a smooth cruise to work. A lot of other things like insurance, maintenance can chip at your joy of riding.
