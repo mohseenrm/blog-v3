@@ -45,6 +45,19 @@ Harleys and Indians (not the people) make great looking bikes that are low and c
 
 The unholy bastard love child of sport and cruiser bikes. They usually have a tuned sports engine with stripped down fairings to reduce excess weight with a more upright seating position. These bikes are drop dead gorgeous with ample power for urban chariotting (*not an actual word, but should be).
 
+#### Touring
+
+These bikes are great for long distance traveller. If you ever wanted to ride across different countries and make friends along the way this type of motorcycle would be ideal. They generally have good low end torque and great weather protection, bigger fuel tanks and saddles. Before you head out, do get a pair of earplugs (sold separately).
+
+### Insurance
+
+This is **KEY** for make a good purchase. Do lookup the insurance for **you** and the specific make and model you are thinking of purchasing. Insurance providers often have a questionnaire to fill that will give you an estimate on how much insurance will cost you. My first purchase I made was without a license and no driving history making my monthly payment like buying a new nintendo switch ever month (not that I wanted it, but would have been nice).
+
+*Quick tip: in the states, if you are planning to purchase a high end sports bike, StateFarm offers insurance based on the pure cc's of an engine and not the brand. That's great for 1000cc+ Ducatistas because parts and repair for them are costly.*
+
+### Motorcycle Safety Course
+
+
 ---------
 
 Riding is exciting and even better is a mean machine to tear down those twisties. But before you swing a foot on motorcycle here's some boring stuff you have to get together before riding into the wind.

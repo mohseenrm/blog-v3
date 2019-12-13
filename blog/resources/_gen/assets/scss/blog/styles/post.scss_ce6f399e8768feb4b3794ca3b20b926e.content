@@ -130,13 +130,6 @@ table {
 html, body {
   width: 100%; }
 
-#timeline-content {
-  display: flex;
-  background: white;
-  padding: 0% 5%;
-  height: 100%;
-  border-radius: 5px; }
-
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -145,12 +138,6 @@ html, body {
 .content {
   display: flex;
   flex-direction: column;
-  background: #ffe259;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffa751, #ffe259);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ffa751, #ffe259);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* also update the right margin of logo to make it look even */
   padding: 0% 3% 3% 3%;
   height: 100%; }
@@ -204,37 +191,6 @@ article {
     font-size: 1.3rem; }
   h5, h6 {
     font-size: 1rem; } }
-
-.timeline-item {
-  padding: 3em 2em 2em;
-  position: relative;
-  color: rgba(0, 0, 0, 0.7);
-  border-left: 2px solid rgba(255, 218, 11, 0.787); }
-  .timeline-item p {
-    font-size: 1rem; }
-  .timeline-item::before {
-    content: attr(date-is);
-    position: absolute;
-    left: 2em;
-    font-weight: bold;
-    top: 1.1em;
-    display: block;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: 1px; }
-  .timeline-item::after {
-    width: 15px;
-    height: 15px;
-    display: block;
-    top: 1em;
-    position: absolute;
-    left: -11px;
-    border-radius: 15px;
-    content: '';
-    border: 2px solid rgba(255, 218, 11, 0.787);
-    background: white; }
-  .timeline-item:last-child {
-    border-image: linear-gradient(to bottom, rgba(255, 218, 11, 0.787) 60%, rgba(255, 218, 11, 0)) 1 100%; }
 
 .link {
   color: black;
@@ -311,7 +267,232 @@ svg rect#border {
   .link {
     font-size: 1.3rem; } }
 
-ul, ol {
-  list-style: none; }
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
 
-/*# sourceMappingURL=main.css.map */
+html {
+  font-size: 12px; }
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 16px; } }
+
+body {
+  line-height: 1.85; }
+
+p,
+.splendor-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem; }
+
+h1,
+.splendor-h1,
+h2,
+.splendor-h2,
+h3,
+.splendor-h3,
+h4,
+.splendor-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42; }
+
+h1,
+.splendor-h1 {
+  margin-top: 0;
+  font-size: 3.998rem; }
+
+h2,
+.splendor-h2 {
+  font-size: 2.827rem; }
+
+h3,
+.splendor-h3 {
+  font-size: 1.999rem; }
+
+h4,
+.splendor-h4 {
+  font-size: 1.414rem; }
+
+h5,
+.splendor-h5 {
+  font-size: 1.121rem; }
+
+h6,
+.splendor-h6 {
+  font-size: .88rem; }
+
+small,
+.splendor-small {
+  font-size: .707em; }
+
+/* https://github.com/mrmrs/fluidity */
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%; }
+
+html {
+  font-size: 18px;
+  max-width: 100%; }
+
+body {
+  color: #444;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  max-width: 100%; }
+
+/* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
+p,
+*:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
+  margin: 1rem auto 1rem;
+  max-width: 36rem;
+  padding: .25rem; }
+
+div {
+  width: 100%; }
+
+div img {
+  width: 100%; }
+
+blockquote p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1rem auto 1rem;
+  max-width: 48rem; }
+
+li {
+  margin-left: 2rem; }
+
+/* Counteract the specificity of the gross *:not() chain. */
+h1 {
+  padding: 4rem 0 !important; }
+
+/*  === End gross hack */
+p {
+  color: #555;
+  height: auto;
+  line-height: 1.45; }
+
+pre,
+code {
+  font-family: Menlo, Monaco, "Courier New", monospace; }
+
+pre {
+  background-color: #fafafa;
+  font-size: .8rem;
+  overflow-x: scroll;
+  padding: 1.125em; }
+
+a,
+a:visited {
+  color: #3498db; }
+
+a:hover,
+a:focus,
+a:active {
+  color: #2980b9; }
+
+.banner_image {
+  width: 100%;
+  background-size: cover; }
+
+.banner_title {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 !important;
+  max-width: 100%; }
+
+.article {
+  padding: 0% 2%; }
+
+/* https://css-tricks.com/full-width-containers-limited-width-parents/ */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; }
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background: white;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  max-width: 100%; }
+
+.prognroll-bar {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; }
+
+.logo {
+  position: relative;
+  right: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center; }
+  .logo > svg#logo {
+    width: 10%; }
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .logo > svg#logo {
+    margin-top: 0%; } }
+
+svg#logo {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; }
+
+#main {
+  margin-top: 0%;
+  padding-top: 0%; }
+
+/*# sourceMappingURL=post.css.map */

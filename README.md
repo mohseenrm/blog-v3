@@ -1,7 +1,7 @@
 # blog-v3
 Blog powered by Hugo
 
-#### Run server with drafts
+#### Run dev server with drafts
 ```
-hugo server -D
+hugo server --config config/dev.toml -D
 ```
